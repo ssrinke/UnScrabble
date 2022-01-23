@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+        Name: Sanjana Rinke
+        Andrew ID: srinke
+        Email: srinke@andrew.cmu.edu
+        Project 4-Task 1
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <!--Displays welcome messages-->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Welcome_Message"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <!--Enables user input for word-->
+    <EditText
+        android:id="@+id/searchTerm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="Enter Word"
+        android:singleLine="true"
+        android:textColor="#000" />
+
+    <!--    Displays dropdown with functionality-->
+    <!--    https://stackoverflow.com/questions/13377361/how-to-create-a-drop-down-list-->
+    <Spinner
+        android:id="@+id/functionDropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
+
+    <!--    Submit button-->
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="Submit" />
+
+    <!--    Header for reponse -->
+    <!--    https://www.javatpoint.com/android-listview-example-->
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/resultHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:padding="2dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#4d4d4d"
+        android:textStyle="bold" />
+
+    <!-- list view to display reponse-->
+    <!--    https://www.javatpoint.com/android-listview-example-->
+    <ListView
+        android:id="@+id/resultListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:padding="2dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+</LinearLayout>
