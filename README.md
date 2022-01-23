@@ -1,2 +1,2 @@
 # UnScrabble
-Refer Documentaton PDF attached in the repository
+Refer Documentation PDF attached in the repository
